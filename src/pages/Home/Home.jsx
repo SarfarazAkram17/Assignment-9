@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../../Components/Hero/Hero';
-import HowItWorks from '../../Components/HowItWorkds/HowItWorks';
+import HowItWorks from '../../Components/HowItWorks/HowItWorks';
 import { useLoaderData } from 'react-router';
 import Companies from '../../Components/Companies/Companies';
 
