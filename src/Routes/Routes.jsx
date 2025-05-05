@@ -22,7 +22,13 @@ export const router = createBrowserRouter([
       },
       {
         path: "/company/:id",
+        loader: () => fetch("/companies.json"),
         Component: CompanyDetials,
+        hydrateFallbackElement: (
+          <div className="flex justify-center mt-48">
+            <span className="loading loading-bars loading-xl"></span>
+          </div>
+        ),
       },
       {
         path: "/login",
