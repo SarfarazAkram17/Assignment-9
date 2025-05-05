@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
     return (
         <section className="bg-gradient-to-b from-white to-blue-50 py-12 px-4 md:px-10 lg:px-24">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
                 {/* Left - Text */}
                 <motion.div
                     initial={{ opacity: 0, x: -100 }}
