@@ -9,8 +9,9 @@ const Hero = () => {
                 {/* Left - Text */}
                 <motion.div
                     initial={{ opacity: 0, x: -100 }}
-                    animate={{ opacity: 1, x: 0 }}
+                    whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
+                    viewport={{ once: false, amount: 0.3 }}
                 >
                     <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
                         Find Your <span className="text-blue-600">Dream Job</span> Today
@@ -28,8 +29,9 @@ const Hero = () => {
                 {/* Right - Image */}
                 <motion.div
                     initial={{ opacity: 0, x: 100 }}
-                    animate={{ opacity: 1, x: 0 }}
+                    whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
+                    viewport={{ once: false, amount: 0.3 }}
                 >
                     <img
                         src="https://i.ibb.co.com/tTRnnrPk/Screenshot-2025-05-05-164433.png"
