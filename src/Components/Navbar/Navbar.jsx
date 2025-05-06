@@ -5,7 +5,7 @@ import { FaBriefcase } from "react-icons/fa";
 import { AuthContext } from "../../Authentication/AuthContext";
 
 const Navbar = () => {
-  const {user}= use(AuthContext)
+  const { user } = use(AuthContext);
 
   const links = (
     <>
@@ -48,34 +48,34 @@ const Navbar = () => {
             className="menu menu-md text-center dropdown-content bg-base-100 rounded-box z-1 mt-3 w-48 p-2 shadow"
           >
             {links}
-<div className="my-4">
-{register}
-
-</div>
+            <div className="my-4">{register}</div>
           </ul>
         </div>
         <a className="btn btn-ghost text-2xl">
           <FaBriefcase /> JOBTRACK
         </a>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
-      {
-        user ?
-<Link to='/myProfile' className="navbar-end">
-<img src={user.photoURL} alt="" className="h-12 w-12 rounded-full cursor-pointer" />
-</Link>
-        :
-         <div className="navbar-end space-x-2">
-        <Link to="/login">
-          <button className="btn btn-primary text-white font-bold">
-            Login
-          </button>
+      {user ? (
+        <Link to="/myProfile" className="navbar-end">
+          <img
+            src={user.photoURL}
+            alt=""
+            className="h-12 w-12 rounded-full cursor-pointer"
+          />
         </Link>
-        <div className="hidden lg:block">{register}</div>
-      </div>
-      }
+      ) : (
+        <div className="navbar-end space-x-2">
+          <Link to="/login">
+            <button className="btn btn-primary text-white font-bold">
+              Login
+            </button>
+          </Link>
+          <div className="hidden lg:block">{register}</div>
+        </div>
+      )}
     </div>
   );
 };
