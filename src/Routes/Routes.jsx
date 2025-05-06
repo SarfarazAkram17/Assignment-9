@@ -7,6 +7,7 @@ import CompanyDetials from "../Components/CompanyDetails/CompanyDetials";
 import MyProfile from "../pages/MyProfile/MyProfile";
 import Blog from "../pages/Blog/Blog";
 import PrivateRoutes from "./PrivateRoutes";
+import EditProfile from "../pages/EditProfile/EditProfile";
 
 export const router = createBrowserRouter([
   {
@@ -43,7 +44,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "/myProfile",
-        Component: MyProfile,
+        element: <PrivateRoutes><MyProfile></MyProfile></PrivateRoutes>
+      },
+      {
+        path: "/editProfile",
+        element: <PrivateRoutes><EditProfile></EditProfile></PrivateRoutes>
       },
       {
         path: "/blog",
