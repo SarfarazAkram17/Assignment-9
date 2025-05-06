@@ -48,7 +48,7 @@ const Navbar = () => {
             className="menu menu-md text-center dropdown-content bg-base-100 rounded-box z-1 mt-3 w-48 p-2 shadow"
           >
             {links}
-            <div className="my-4">{register}</div>
+            {!user && <div className="my-4">{register}</div>}
           </ul>
         </div>
         <a className="btn btn-ghost text-2xl">

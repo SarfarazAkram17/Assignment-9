@@ -8,6 +8,7 @@ import MyProfile from "../pages/MyProfile/MyProfile";
 import Blog from "../pages/Blog/Blog";
 import PrivateRoutes from "./PrivateRoutes";
 import EditProfile from "../pages/EditProfile/EditProfile";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 export const router = createBrowserRouter([
   {
@@ -56,4 +57,8 @@ export const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: '*',
+    Component: ErrorPage
+  }
 ]);
