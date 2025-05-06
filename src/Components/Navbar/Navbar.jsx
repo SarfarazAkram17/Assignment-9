@@ -9,7 +9,9 @@ const Navbar = () => {
   const { user, logOutuser } = use(AuthContext);
   const handleLogOut = () => {
     logOutuser()
-      .then(() => {toast.warning('You Logged Out')})
+      .then(() => {
+        toast.warning("You Logged Out");
+      })
       .catch((error) => toast.error(error.message));
   };
   const links = (
@@ -57,6 +59,14 @@ const Navbar = () => {
           >
             {links}
             {!user && <div className="my-4">{register}</div>}
+            {user && (
+              <button
+                onClick={handleLogOut}
+                className="btn btn-error  md:hidden text-white my-4"
+              >
+                Log Out
+              </button>
+            )}
           </ul>
         </div>
         <a className="btn btn-ghost text-2xl">
@@ -77,7 +87,7 @@ const Navbar = () => {
           </Link>
           <button
             onClick={handleLogOut}
-            className="btn btn-error text-white"
+            className="btn btn-error hidden md:block text-white"
           >
             Log Out
           </button>

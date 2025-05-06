@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-b from-white to-blue-50 py-12 px-4 md:px-10 lg:px-24">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+    <section className="bg-gradient-to-b mx-auto max-w-full from-white to-blue-50 py-12 px-4 md:px-10 lg:px-24">
+      <div className="max-w-7xl mx-auto hidden md:grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         {/* Left - Text */}
         <motion.div
           initial={{ opacity: 0, x: -100 }}
@@ -39,6 +39,31 @@ const Hero = () => {
             className="w-full h-auto object-contain"
           />
         </motion.div>
+      </div>
+      <div className="max-w-7xl mx-auto md:hidden flex flex-col items-center gap-12">
+        {/* Left - Text */}
+        <div>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
+            Find Your <span className="text-blue-600">Dream Job</span> Today
+          </h1>
+          <p className="mt-6 text-base md:text-lg text-gray-600">
+            JobTrack helps you explore job opportunities, connect with top
+            companies, and land the job you deserve — fast and easily.
+          </p>
+          <button className="mt-8 inline-flex items-center gap-2 btn-primary text-white font-semibold px-6 py-3 rounded-lg btn">
+            <FaBriefcase />
+            Explore Jobs
+          </button>
+        </div>
+
+        {/* Right - Image */}
+        <div>
+          <img
+            src="https://i.ibb.co.com/tTRnnrPk/Screenshot-2025-05-05-164433.png"
+            alt="Job search illustration"
+            className="w-full h-auto object-contain"
+          />
+        </div>
       </div>
     </section>
   );
