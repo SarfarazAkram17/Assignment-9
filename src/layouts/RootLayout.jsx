@@ -6,12 +6,14 @@ import { ToastContainer } from "react-toastify";
 
 const RootLayout = () => {
   return (
-    <div className="md:container mx-auto">
-      <Navbar></Navbar>
-      <Outlet></Outlet>
+    <div>
+      <div className="md:container mx-auto">
+        <Navbar></Navbar>
+        <Outlet></Outlet>
+      </div>
       <Footer></Footer>
 
-<ToastContainer></ToastContainer>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };

@@ -17,8 +17,8 @@ const Navbar = () => {
       <NavLink className="my-1 mx-4 text-[1.1rem]" to="/">
         Home
       </NavLink>
-      <NavLink className="my-1 mx-4 text-[1.1rem]" to="/blog">
-        Blog
+      <NavLink className="my-1 mx-4 text-[1.1rem]" to="/success">
+        Success
       </NavLink>
       <NavLink className="my-1 mx-4 text-[1.1rem]" to="/myProfile">
         Profile

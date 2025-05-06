@@ -1,0 +1,272 @@
+[
+  {
+    "id": "person-001",
+    "name": "Alex Carter",
+    "field": "Frontend Developer",
+    "review": "The hiring process with Apple was smooth, and this platform helped me connect quickly. Loving my new role in San Francisco!",
+    "image": "https://media.istockphoto.com/id/1396456823/photo/african-american-male-lawyer-opens-a-new-firm-in-the-city.jpg?s=612x612&w=0&k=20&c=T-2Xfc2Q8sNxUej66pfX1P4iuyN3viiiFQI3rmfqXSI=",
+    "hiredDate": "2024-06-15",
+    "hiringCompany": "Apple Inc."
+  },
+  {
+    "id": "person-002",
+    "name": "Sofia Nguyen",
+    "field": "Backend Developer",
+    "review": "Microsoft hired me remotely in just a week! The platform’s salary transparency was a big help, and the team is fantastic.",
+    "image": "https://media.istockphoto.com/id/1326920136/photo/shot-of-a-business-women-using-laptop-working-at-home-stock-photo.jpg?s=612x612&w=0&k=20&c=tDhOPNMfBUlZLy5titrUrOXfHVbhVosEoQveTwuuL1Y=",
+    "hiredDate": "2024-07-22",
+    "hiringCompany": "Microsoft Corporation"
+  },
+  {
+    "id": "person-003",
+    "name": "Liam Brooks",
+    "field": "Data Scientist",
+    "review": "Amazon reached out, and I’m thrilled with my role in Seattle. The platform’s matching was spot on for my skills!",
+    "image": "https://media.istockphoto.com/id/104821116/photo/smiling-lawyer-sitting-at-desk-in-office.jpg?s=612x612&w=0&k=20&c=lgsv21HGQYmtXBusPC3TB22OEEjH7xKflQVjliJ1OmQ=",
+    "hiredDate": "2024-08-10",
+    "hiringCompany": "Amazon.com Inc."
+  },
+  {
+    "id": "person-004",
+    "name": "Emma Davis",
+    "field": "Software Engineer",
+    "review": "Google’s thorough process was worth it! This platform made it easy to showcase my experience in Mountain View.",
+    "image": "https://media.istockphoto.com/id/1587604256/photo/portrait-lawyer-and-black-woman-with-tablet-smile-and-happy-in-office-workplace-african.jpg?s=612x612&w=0&k=20&c=n9yulMNKdIYIQC-Qns8agFj6GBDbiKyPRruaUTh4MKs=",
+    "hiredDate": "2024-09-05",
+    "hiringCompany": "Google"
+  },
+  {
+    "id": "person-005",
+    "name": "Manav Patel",
+    "field": "GPU Engineer",
+    "review": "Nvidia hired me for an innovative role in Santa Clara. The platform’s matching system worked perfectly for my skills!",
+    "image": "https://t3.ftcdn.net/jpg/00/69/90/62/360_F_69906272_95xqHEpDgZTq2MUBHKMUtO4vB3uyIxHI.jpg",
+    "hiredDate": "2024-10-12",
+    "hiringCompany": "Nvidia Corporation"
+  },
+  {
+    "id": "person-006",
+    "name": "Ava Kim",
+    "field": "Petroleum Engineer",
+    "review": "Saudi Aramco’s hiring process was quick, and this platform helped me land a role in Dhahran. Great experience!",
+    "image": "https://static.vecteezy.com/system/resources/previews/022/786/537/large_2x/woman-lawyer-reading-legal-book-with-gavel-on-table-in-office-justice-and-law-attorney-concept-photo.jpg",
+    "hiredDate": "2024-11-20",
+    "hiringCompany": "Saudi Aramco"
+  },
+  {
+    "id": "person-007",
+    "name": "Ethan Lee",
+    "field": "Data Scientist",
+    "review": "Meta hired me for a role in Menlo Park. The platform’s profile setup made it easy to connect with their team!",
+    "image": "https://static.vecteezy.com/system/resources/thumbnails/036/326/245/small/ai-generated-of-handsome-happy-man-against-a-library-bookshelf-background-lawyer-manager-businessman-concept-successful-manin-a-suit-office-workplace-photo.jpg",
+    "hiredDate": "2024-12-01",
+    "hiringCompany": "Meta Platforms Inc."
+  },
+  {
+    "id": "person-008",
+    "name": "Olivia Brown",
+    "field": "Manufacturing Engineer",
+    "review": "Tesla hired me in Austin, and I’m excited! The platform’s process was straightforward and supportive.",
+    "image": "https://www.usnews.com/object/image/0000014f-e207-d256-a16f-f23fe9970000/150918edufreddiegraylawschool-stock.jpg?update-time=1442606261650&size=responsive640",
+    "hiredDate": "2025-01-15",
+    "hiringCompany": "Tesla Inc."
+  },
+  {
+    "id": "person-009",
+    "name": "Mason Clark",
+    "field": "DevOps Engineer",
+    "review": "Apple’s team in San Francisco was great to work with. This platform made the connection process seamless!",
+    "image": "https://static.vecteezy.com/system/resources/thumbnails/032/399/681/small/a-male-lawyer-stands-confidently-in-the-courtroom-a-portrait-capturing-his-professionalism-and-dedication-to-the-law-generative-ai-photo.jpg",
+    "hiredDate": "2024-06-20",
+    "hiringCompany": "Apple Inc."
+  },
+  {
+    "id": "person-010",
+    "name": "Isabella White",
+    "field": "Cloud Engineer",
+    "review": "Microsoft hired me remotely, and the platform’s job details transparency helped me decide. Great team!",
+    "image": "https://img.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg?semt=ais_hybrid&w=740",
+    "hiredDate": "2024-07-30",
+    "hiringCompany": "Microsoft Corporation"
+  },
+  {
+    "id": "person-011",
+    "name": "James Harris",
+    "field": "Cloud Engineer",
+    "review": "Amazon’s process was efficient, and this platform helped me land a role in Seattle. Loving the work!",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLT7iY1DJSetQ8bPCTZS0eJRRxkP1Bbt8e-Q&s",
+    "hiredDate": "2024-08-25",
+    "hiringCompany": "Amazon.com Inc."
+  },
+  {
+    "id": "person-012",
+    "name": "Mia Lewis",
+    "field": "UI/UX Designer",
+    "review": "Google hired me remotely, and the platform’s portfolio feature helped me shine. Excited for this opportunity!",
+    "image": "https://media.istockphoto.com/id/171096044/photo/smiling-judge-holding-file-in-courtroom.jpg?s=612x612&w=0&k=20&c=nnWCNnnm2ZDukXBpK42fibP4TKF2KcXkNhGw3YbuND0=",
+    "hiredDate": "2024-09-15",
+    "hiringCompany": "Google"
+  },
+  {
+    "id": "person-013",
+    "name": "Lucas Walker",
+    "field": "AI Specialist",
+    "review": "Nvidia’s innovative projects in Santa Clara are amazing. The platform’s matching was perfect for my skills!",
+    "image": "https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWVuJTIwZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D",
+    "hiredDate": "2024-10-30",
+    "hiringCompany": "Nvidia Corporation"
+  },
+  {
+    "id": "person-014",
+    "name": "Amelia Hall",
+    "field": "Geologist",
+    "review": "Saudi Aramco hired me in Dhahran, and this platform made the process quick and effective. Great team!",
+    "image": "https://img.freepik.com/free-photo/medium-shot-woman-working-as-lawyer_23-2151202449.jpg",
+    "hiredDate": "2024-11-10",
+    "hiringCompany": "Saudi Aramco"
+  },
+  {
+    "id": "person-015",
+    "name": "Henry Allen",
+    "field": "Software Engineer",
+    "review": "Meta hired me in Menlo Park, and the platform’s profile setup was key to landing this role. Thrilled!",
+    "image": "https://t3.ftcdn.net/jpg/01/22/80/48/360_F_122804827_OXdhjZNwMRG1pMArsVhuESfpTdlkH1AW.jpg",
+    "hiredDate": "2024-12-15",
+    "hiringCompany": "Meta Platforms Inc."
+  },
+  {
+    "id": "person-016",
+    "name": "Charlotte Young",
+    "field": "Electrical Engineer",
+    "review": "Tesla hired me in Austin, and the platform’s process was seamless. Excited to be part of their team!",
+    "image": "https://media.istockphoto.com/id/1049775258/photo/smiling-handsome-electrician-repairing-electrical-box-with-pliers-in-corridor-and-looking-at.jpg?s=612x612&w=0&k=20&c=stdWozouV2XsrHk2xXD3C31nT90BG7ydZvcpAn1Fx7I=",
+    "hiredDate": "2025-01-20",
+    "hiringCompany": "Tesla Inc."
+  },
+  {
+    "id": "person-017",
+    "name": "Daniel King",
+    "field": "Mobile App Developer",
+    "review": "Apple’s team in San Francisco was supportive. This platform helped me stand out during the hiring process!",
+    "image": "https://ap-southeast-2-seek-apac.graphassets.com/AEzBCRO50TYyqbV6XzRDQz/FbdyYd7YSFeuJF349fWO",
+    "hiredDate": "2024-06-25",
+    "hiringCompany": "Apple Inc."
+  },
+  {
+    "id": "person-018",
+    "name": "Sophia Adams",
+    "field": "Data Analyst",
+    "review": "Microsoft hired me remotely, and the platform’s job details transparency was a big help. Great experience!",
+    "image": "https://media.istockphoto.com/id/1451456915/photo/female-freelance-developer-coding-and-programming-coding-on-two-with-screens-with-code.jpg?s=612x612&w=0&k=20&c=BFFIc-xOwzeRyR8ui9VkFKEqqqQFBbISJzr-ADN6hS8=",
+    "hiredDate": "2024-07-10",
+    "hiringCompany": "Microsoft Corporation"
+  },
+  {
+    "id": "person-019",
+    "name": "William Scott",
+    "field": "Software Engineer",
+    "review": "Amazon’s process in Seattle was efficient, and this platform made it easy to connect. Loving my role!",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRNwZWifV89FugqLvoDM7lRrQY8Pg2lBE3Tw&s",
+    "hiredDate": "2024-08-30",
+    "hiringCompany": "Amazon.com Inc."
+  },
+  {
+    "id": "person-020",
+    "name": "Ella Turner",
+    "field": "Product Manager",
+    "review": "Google hired me in Mountain View, and the platform’s process was straightforward. Excited for this role!",
+    "image": "https://media.istockphoto.com/id/1824217014/photo/small-business-woman-and-tablet-for-e-commerce-startup-and-inventory-management-of-online.jpg?s=612x612&w=0&k=20&c=vfEQX7o9RoucrTmZgk82wJ9d1GEn8-Z8Fg-IUG2Y3no=",
+    "hiredDate": "2024-09-20",
+    "hiringCompany": "Google"
+  },
+  {
+    "id": "person-021",
+    "name": "Jack Evans",
+    "field": "Hardware Engineer",
+    "review": "Nvidia hired me in Santa Clara, and the platform’s matching system was perfect for my skills. Great team!",
+    "image": "https://t4.ftcdn.net/jpg/02/14/74/61/360_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.jpg",
+    "hiredDate": "2024-10-15",
+    "hiringCompany": "Nvidia Corporation"
+  },
+  {
+    "id": "person-022",
+    "name": "Grace Mitchell",
+    "field": "Process Engineer",
+    "review": "Saudi Aramco hired me remotely, and this platform made the process quick. The team has been welcoming!",
+    "image": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?semt=ais_hybrid&w=740",
+    "hiredDate": "2024-11-25",
+    "hiringCompany": "Saudi Aramco"
+  },
+  {
+    "id": "person-023",
+    "name": "Logan Wright",
+    "field": "Software Engineer",
+    "review": "Meta hired me in Menlo Park, and the platform helped me showcase my skills. Thrilled with this opportunity!",
+    "image": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    "hiredDate": "2024-12-20",
+    "hiringCompany": "Meta Platforms Inc."
+  },
+  {
+    "id": "person-024",
+    "name": "Zoe Parker",
+    "field": "Battery Engineer",
+    "review": "Tesla hired me in Austin, and the platform’s process was seamless. Excited to be part of their innovation!",
+    "image": "https://media.istockphoto.com/id/1289220545/photo/beautiful-woman-smiling-with-crossed-arms.jpg?s=612x612&w=0&k=20&c=qmOTkGstKj1qN0zPVWj-n28oRA6_BHQN8uVLIXg0TF8=",
+    "hiredDate": "2025-01-25",
+    "hiringCompany": "Tesla Inc."
+  },
+  {
+    "id": "person-025",
+    "name": "Ryan Phillips",
+    "field": "Cloud Architect",
+    "review": "Apple hired me in San Francisco, and the platform’s profile setup helped me stand out. Great experience!",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2qB43KRtCEPZFNRHTFEy_mEXw2Fvvq88jFw&s",
+    "hiredDate": "2024-06-30",
+    "hiringCompany": "Apple Inc."
+  },
+  {
+    "id": "person-026",
+    "name": "Lily Robinson",
+    "field": "Security Engineer",
+    "review": "Microsoft hired me remotely, and the platform’s job details transparency was a big help. Loving my role!",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv8EUXVcfhh9AaGOZ-ZYi80CELzk4x1cS_qQ&s",
+    "hiredDate": "2024-07-15",
+    "hiringCompany": "Microsoft Corporation"
+  },
+  {
+    "id": "person-027",
+    "name": "Nathan Hill",
+    "field": "Frontend Developer",
+    "review": "Amazon’s process in Seattle was efficient, and this platform made it easy to connect. Great team to work with!",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQiUvtYCuHnxrQ9iJVqomIDZ-QUVdSUwyKgQ&s",
+    "hiredDate": "2024-08-05",
+    "hiringCompany": "Amazon.com Inc."
+  },
+  {
+    "id": "person-028",
+    "name": "Chloe Green",
+    "field": "Site Reliability Engineer",
+    "review": "Google hired me in Mountain View, and the platform’s process was straightforward. Excited for this role!",
+    "image": "https://img.freepik.com/free-photo/lifestyle-people-emotions-casual-concept-confident-nice-smiling-asian-woman-cross-arms-chest-confident-ready-help-listening-coworkers-taking-part-conversation_1258-59335.jpg?semt=ais_hybrid&w=740",
+    "hiredDate": "2024-09-25",
+    "hiringCompany": "Google"
+  },
+  {
+    "id": "person-029",
+    "name": "Owen Bennett",
+    "field": "Product Manager",
+    "review": "Nvidia hired me in Santa Clara, and the platform’s matching system was perfect. Excited to lead exciting projects!",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPty6a8rKXnhOmdXVo_vgCZaQ6p0bu66n-ZA&s",
+    "hiredDate": "2024-10-20",
+    "hiringCompany": "Nvidia Corporation"
+  },
+  {
+    "id": "person-030",
+    "name": "Harper Moore",
+    "field": "Sustainability Engineer",
+    "review": "Saudi Aramco hired me in Dhahran, and this platform made the process quick. The team has been amazing to work with!",
+    "image": "https://media.istockphoto.com/id/1496613385/photo/smiling-confident-latin-woman-looking-at-camera.jpg?s=612x612&w=0&k=20&c=rDn837m8OMd_uN8_hduEScGzARZznKFWfn45kQJ2j7A=",
+    "hiredDate": "2024-11-30",
+    "hiringCompany": "Saudi Aramco"
+  }
+]

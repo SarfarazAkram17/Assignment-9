@@ -5,11 +5,11 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import CompanyDetials from "../Components/CompanyDetails/CompanyDetials";
 import MyProfile from "../pages/MyProfile/MyProfile";
-import Blog from "../pages/Blog/Blog";
 import PrivateRoutes from "./PrivateRoutes";
 import EditProfile from "../pages/EditProfile/EditProfile";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import ForgotPassword from "../pages/ForgetPassword/ForgotPassword";
+import Success from "../pages/Success/Success";
 
 export const router = createBrowserRouter([
   {
@@ -21,7 +21,7 @@ export const router = createBrowserRouter([
         loader: () => fetch("/companies.json"),
         Component: Home,
         hydrateFallbackElement: (
-          <div className="flex justify-center mt-48">
+          <div className="flex justify-center mt-28 mb-20">
             <span className="loading loading-bars loading-xl"></span>
           </div>
         ),
@@ -29,9 +29,23 @@ export const router = createBrowserRouter([
       {
         path: "/company/:id",
         loader: () => fetch("/companies.json"),
-        element: <PrivateRoutes><CompanyDetials></CompanyDetials></PrivateRoutes>,
+        element: (
+          <PrivateRoutes>
+            <CompanyDetials></CompanyDetials>
+          </PrivateRoutes>
+        ),
         hydrateFallbackElement: (
-          <div className="flex justify-center mt-48">
+          <div className="flex justify-center mt-28 mb-20">
+            <span className="loading loading-bars loading-xl"></span>
+          </div>
+        ),
+      },
+      {
+        path: "/success",
+        loader: () => fetch("/reviews.json"),
+        Component: Success,
+        hydrateFallbackElement: (
+          <div className="flex justify-center mt-28 mb-20">
             <span className="loading loading-bars loading-xl"></span>
           </div>
         ),
@@ -50,20 +64,24 @@ export const router = createBrowserRouter([
       },
       {
         path: "/myProfile",
-        element: <PrivateRoutes><MyProfile></MyProfile></PrivateRoutes>
+        element: (
+          <PrivateRoutes>
+            <MyProfile></MyProfile>
+          </PrivateRoutes>
+        ),
       },
       {
         path: "/editProfile",
-        element: <PrivateRoutes><EditProfile></EditProfile></PrivateRoutes>
-      },
-      {
-        path: "/blog",
-        element: <PrivateRoutes><Blog></Blog></PrivateRoutes>
+        element: (
+          <PrivateRoutes>
+            <EditProfile></EditProfile>
+          </PrivateRoutes>
+        ),
       },
     ],
   },
   {
-    path: '*',
-    Component: ErrorPage
-  }
+    path: "*",
+    Component: ErrorPage,
+  },
 ]);
