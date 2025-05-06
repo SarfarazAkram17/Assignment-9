@@ -1,6 +1,7 @@
 import React, { use } from "react";
 import { useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../../Authentication/AuthContext";
+import { toast } from "react-toastify";
 
 const ForgotPassword = () => {
     document.title = 'JobTrack || Forget Password';
@@ -21,7 +22,7 @@ const ForgotPassword = () => {
         window.open("https://mail.google.com", "_blank");
         navigate(-1)
       })
-      .catch((error) => console.log(error));
+      .catch((error) => toast.error(error.message));
   };
 
   return (

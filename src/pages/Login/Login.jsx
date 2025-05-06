@@ -2,11 +2,11 @@ import React, { use, useRef, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../../Authentication/AuthContext";
+import { toast } from "react-toastify";
 
 const Login = () => {
-  document.title = 'JobTrack || Login';
+  document.title = "JobTrack || Login";
   const [showPassword, setShowPassword] = useState(false);
-  const [error, setError] = useState("");
   const emailRef = useRef(null);
   const location = useLocation();
   const navigate = useNavigate();
@@ -20,35 +20,37 @@ const Login = () => {
     const password = e.target.password.value;
 
     signInUser(email, password)
-      .then((result) => {
+      .then(() => {
         navigate(location.state || "/");
-        console.log(result.user);
+        toast.success("Your Logged In Successfully");
       })
       .catch((error) => {
-        setError(error.message);
+        toast.error(error.message);
       });
   };
   const handleGoogleSignIn = () => {
     googleSignIn()
-      .then((result) => {
+      .then(() => {
         navigate(location.state || "/");
-        console.log(result);
+        toast.success("Your Logged In Successfully");
       })
-      .catch((error) => console.log(error));
+      .catch((error) => toast.error(error.message));
   };
   const handleGithubSignIn = () => {
     githubSignIn()
       .then(() => {
         navigate(location.state || "/");
+        toast.success("Your Logged In Successfully");
       })
-      .catch((error) => console.log(error));
+      .catch((error) => toast.error(error.message));
   };
   const handleFacebookSignIn = () => {
     facebookSignIn()
       .then(() => {
         navigate(location.state || "/");
+        toast.success("Your Logged In Successfully");
       })
-      .catch((error) => console.log(error));
+      .catch((error) => toast.error(error.message));
   };
   const handleForgotPassword = () => {
     const email = emailRef.current.value;
@@ -92,7 +94,6 @@ const Login = () => {
             <div onClick={handleForgotPassword}>
               <a className="link link-hover font-semibold">Forgot password?</a>
             </div>
-            {error && <p className="text-red-500 font-semibold">{error}</p>}
             <button className="btn btn-primary text-white mt-4">Login</button>
             <p className="text-xs mt-4">
               Don't have an account ? Please{" "}

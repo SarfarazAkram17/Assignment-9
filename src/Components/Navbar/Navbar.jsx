@@ -3,13 +3,14 @@ import "./Navbar.css";
 import { Link, NavLink } from "react-router";
 import { FaBriefcase } from "react-icons/fa";
 import { AuthContext } from "../../Authentication/AuthContext";
+import { toast } from "react-toastify";
 
 const Navbar = () => {
   const { user, logOutuser } = use(AuthContext);
   const handleLogOut = () => {
     logOutuser()
-      .then(() => {})
-      .catch((error) => console.log(error));
+      .then(() => {toast.warning('You Logged Out')})
+      .catch((error) => toast.error(error.message));
   };
   const links = (
     <>

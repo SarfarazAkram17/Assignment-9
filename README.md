@@ -30,3 +30,4 @@ The purpose of JobTrack is to provide users with a user-friendly interface to br
 - **daisyUI** – For make website responsive easily
 - **React Icons** – For consistent iconography across the app
 - **Motion** – For add animation in Hero and How It Works sections
+- **React Toastify** – For show success, warning and error message using toast

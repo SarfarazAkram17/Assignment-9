@@ -1,6 +1,7 @@
 import React, { use } from "react";
 import { AuthContext } from "../../Authentication/AuthContext";
 import { useNavigate } from "react-router";
+import { toast } from "react-toastify";
 
 const EditProfile = () => {
   document.title = 'JobTrack || Edit Profile';
@@ -14,9 +15,10 @@ const EditProfile = () => {
 
     updateUserProfile(name, photo)
       .then(() => {
+        toast.success('Your Profile Updated Successfully')
         navigate(-1);
       })
-      .catch((error) => console.log(error));
+      .catch((error) => toast.error(error.message));
   };
   return (
     <div className="flex justify-center my-10">

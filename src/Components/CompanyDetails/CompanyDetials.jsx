@@ -9,6 +9,7 @@ const CompanyDetails = () => {
 
   const company = companiesData.find((company) => company.id === parseInt(id));
   const { name, logo, location, website, industry, jobs } = company;
+  document.title = `JobTrack || ${name}`;
 
   useEffect(() => {
     window.scrollTo({ top: 80, behavior: "smooth" });

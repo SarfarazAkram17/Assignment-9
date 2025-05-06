@@ -2,9 +2,10 @@ import React, { use, useState } from "react";
 import { AuthContext } from "../../Authentication/AuthContext";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router";
+import { toast } from "react-toastify";
 
 const Register = () => {
-  document.title = 'JobTrack || Register';
+  document.title = "JobTrack || Register";
   const [showPassword, setShowPassword] = useState(false);
   const [nameError, setNameError] = useState("");
   const [passwordError, setPasswordError] = useState("");
@@ -46,18 +47,20 @@ const Register = () => {
       .then(() => {
         updateUserProfile(name, photo)
           .then(() => {})
-          .catch((error) => console.log(error));
+          .catch((error) => toast.error(error.message));
 
+        toast.success("Your Registered Successfully");
         navigate(location.state || "/");
       })
-      .catch((error) => console.log(error));
+      .catch((error) => toast.error(error.message));
   };
   const handleGoogleSignIn = () => {
     googleSignIn()
       .then(() => {
         navigate(location.state || "/");
+        toast.success("Your Registered Successfully");
       })
-      .catch((error) => console.log(error));
+      .catch((error) => toast.error(error.message));
   };
   return (
     <div className="flex justify-center my-10">
