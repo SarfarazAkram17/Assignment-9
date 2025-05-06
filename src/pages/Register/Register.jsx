@@ -7,7 +7,7 @@ const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [nameError, setNameError] = useState("");
   const [passwordError, setPasswordError] = useState("");
-  const { createUser } = use(AuthContext);
+  const { createUser, updateUserProfile, googleSignIn, githubSignIn, facebookSignIn } = use(AuthContext);
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -42,9 +42,33 @@ const Register = () => {
     createUser(email, password)
       .then((result) => {
         console.log(result);
+        updateUserProfile(name, photo)
+          .then(() => {})
+          .catch((error) => console.log(error));
       })
       .catch((error) => console.log(error));
   };
+  const handleGoogleSignIn = ()=>{
+    googleSignIn()
+     .then(result => {
+      console.log(result)
+     })
+     .catch(error => console.log(error))
+  }
+  const handleGithubSignIn = ()=>{
+    githubSignIn()
+     .then(result => {
+      console.log(result)
+     })
+     .catch(error => console.log(error))
+  }
+  const handleFacebookSignIn = ()=>{
+    facebookSignIn()
+     .then(result => {
+      console.log(result)
+     })
+     .catch(error => console.log(error))
+  }
   return (
     <div className="flex justify-center my-10">
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-xl">
@@ -103,10 +127,10 @@ const Register = () => {
                 )}
               </div>
             </div>
-            <button className="btn btn-secondary text-white mt-2">
+            <button className="btn btn-primary text-white mt-4">
               Register
             </button>
-            <p className="text-sm mt-4">
+            <p className="text-xs mt-4">
               Already have an account ? Please{" "}
               <Link
                 to="/login"
@@ -118,7 +142,7 @@ const Register = () => {
           </form>
           <div className="divider text-gray-400 font-semibold">OR</div>
           {/* Google */}
-          <button className="btn bg-gray-50 text-black border-[#e5e5e5] mb-2">
+          <button onClick={handleGoogleSignIn} className="btn bg-gray-50 text-black border-[#e5e5e5] mb-2">
             <svg
               aria-label="Google logo"
               width="16"
@@ -149,7 +173,7 @@ const Register = () => {
             Login with Google
           </button>
           {/* GitHub */}
-          <button className="btn bg-black text-white border-black mb-2">
+          <button onClick={handleGithubSignIn} className="btn bg-black text-white border-black mb-2">
             <svg
               aria-label="GitHub logo"
               width="16"
@@ -166,7 +190,7 @@ const Register = () => {
           </button>
 
           {/* Facebook */}
-          <button className="btn bg-[#1A77F2] text-white border-[#005fd8] mb-4">
+          <button onClick={handleFacebookSignIn} className="btn bg-[#1A77F2] text-white border-[#005fd8] mb-4">
             <svg
               aria-label="Facebook logo"
               width="16"

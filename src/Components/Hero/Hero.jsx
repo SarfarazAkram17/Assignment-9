@@ -20,7 +20,7 @@ const Hero = () => {
                         JobTrack helps you explore job opportunities, connect with top
                         companies, and land the job you deserve — fast and easily.
                     </p>
-                    <button className="mt-8 inline-flex items-center gap-2 btn-secondary text-white font-semibold px-6 py-3 rounded-lg btn">
+                    <button className="mt-8 inline-flex items-center gap-2 btn-primary text-white font-semibold px-6 py-3 rounded-lg btn">
                         <FaBriefcase />
                         Explore Jobs
                     </button>

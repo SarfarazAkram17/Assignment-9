@@ -1,25 +1,19 @@
-import React from "react";
+import React, { use } from "react";
 import "./Navbar.css";
 import { Link, NavLink } from "react-router";
 import { FaBriefcase } from "react-icons/fa";
+import { AuthContext } from "../../Authentication/AuthContext";
 
 const Navbar = () => {
+  const {user}= use(AuthContext)
+
   const links = (
     <>
-      <NavLink className="my-1 mx-4 text-[1rem]" to="/">
+      <NavLink className="my-1 mx-4 text-[1.1rem]" to="/">
         Home
       </NavLink>
-
-      <NavLink className="my-1 mx-4 text-[1rem]" to="/something">
-        Home
-      </NavLink>
-
-      <NavLink className="my-1 mx-4 text-[1rem]" to="/blog">
+      <NavLink className="my-1 mx-4 text-[1.1rem]" to="/blog">
         Blog
-      </NavLink>
-
-      <NavLink className="my-1 mx-4 text-[1rem]" to="/something3">
-        Home
       </NavLink>
     </>
   );
@@ -67,7 +61,13 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
-      <div className="navbar-end space-x-2">
+      {
+        user ?
+<Link to='/myProfile' className="navbar-end">
+<img src={user.photoURL} alt="" className="h-12 w-12 rounded-full cursor-pointer" />
+</Link>
+        :
+         <div className="navbar-end space-x-2">
         <Link to="/login">
           <button className="btn btn-primary text-white font-bold">
             Login
@@ -75,6 +75,7 @@ const Navbar = () => {
         </Link>
         <div className="hidden lg:block">{register}</div>
       </div>
+      }
     </div>
   );
 };

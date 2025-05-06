@@ -1,18 +1,58 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link } from "react-router";
+import { AuthContext } from "../../Authentication/AuthContext";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const [error, setError] = useState("");
 
+  const { signInUser, googleSignIn, githubSignIn, facebookSignIn } = use(AuthContext);
+
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+
+    signInUser(email, password)
+      .then((result) => {
+        console.log(result);
+      })
+      .catch((error) => {
+        setError(error.message)
+      });
+  };
+  const handleGoogleSignIn = ()=>{
+    googleSignIn()
+     .then(result => {
+      console.log(result)
+     })
+     .catch(error => console.log(error))
+  }
+  const handleGithubSignIn = ()=>{
+    githubSignIn()
+     .then(result => {
+      console.log(result)
+     })
+     .catch(error => console.log(error))
+  }
+  const handleFacebookSignIn = ()=>{
+    facebookSignIn()
+     .then(result => {
+      console.log(result)
+     })
+     .catch(error => console.log(error))
+  }
   return (
     <div className="flex justify-center my-10">
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-xl">
         <div className="card-body">
           <h1 className="text-2xl font-bold mb-4">Login now!</h1>
-          <form className="fieldset">
+          <form onSubmit={handleLogin} className="fieldset">
             <label className="label">Email</label>
             <input
+            required
               name="email"
               type="email"
               className="input mb-2"
@@ -21,6 +61,7 @@ const Login = () => {
             <label className="label">Password</label>
             <div className="relative">
               <input
+              required
                 name="password"
                 type={showPassword ? "text" : "password"}
                 className="input mb-4"
@@ -37,14 +78,21 @@ const Login = () => {
                 )}
               </div>
             </div>
-            <button className="btn btn-secondary text-white mt-2">
-            Login
-            </button>
-            <p className="text-sm mt-4">Don't have an account ? Please <Link to='/register' className="text-blue-500 font-semibold underline">Register</Link></p>
+            {error && <p className="text-red-500 font-semibold">{error}</p>}
+            <button className="btn btn-primary text-white mt-4">Login</button>
+            <p className="text-xs mt-4">
+              Don't have an account ? Please{" "}
+              <Link
+                to="/register"
+                className="text-blue-500 font-semibold underline"
+              >
+                Register
+              </Link>
+            </p>
           </form>
           <div className="divider text-gray-400 font-semibold">OR</div>
           {/* Google */}
-          <button className="btn bg-gray-50 text-black border-[#e5e5e5] mb-2">
+          <button onClick={handleGoogleSignIn} className="btn bg-gray-50 text-black border-[#e5e5e5] mb-2">
             <svg
               aria-label="Google logo"
               width="16"
@@ -75,7 +123,7 @@ const Login = () => {
             Login with Google
           </button>
           {/* GitHub */}
-          <button className="btn bg-black text-white border-black mb-2">
+          <button onClick={handleGithubSignIn} className="btn bg-black text-white border-black mb-2">
             <svg
               aria-label="GitHub logo"
               width="16"
@@ -92,7 +140,7 @@ const Login = () => {
           </button>
 
           {/* Facebook */}
-          <button className="btn bg-[#1A77F2] text-white border-[#005fd8] mb-4">
+          <button onClick={handleFacebookSignIn} className="btn bg-[#1A77F2] text-white border-[#005fd8] mb-4">
             <svg
               aria-label="Facebook logo"
               width="16"

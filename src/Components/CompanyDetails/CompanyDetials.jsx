@@ -38,7 +38,7 @@ const CompanyDetails = () => {
       <p className="font-semibold">🏢 Industry: {industry}</p>
 
       {/* Job List */}
-      <h2 className="text-3xl font-bold mt-10 mb-4 text-center">
+      <h2 className="text-3xl font-bold my-10 text-center">
         Available Jobs
       </h2>
       <div className="w-full max-w-3xl flex flex-col gap-6">
@@ -55,7 +55,7 @@ const CompanyDetails = () => {
             </div>
             <button
               onClick={() => setSelectedJob(job)}
-              className="btn btn-secondary mt-4 md:mt-0 px-6 py-2 rounded-full text-white"
+              className="btn btn-primary mt-4 md:mt-0 px-6 py-2 rounded-full text-white"
             >
               Details
             </button>
@@ -107,7 +107,7 @@ const CompanyDetails = () => {
 
               <div className="flex justify-between pt-4">
                 <Link to={website} target="_blank">
-                  <button className="btn btn-secondary text-white rounded px-4 py-2">
+                  <button className="btn btn-primary text-white rounded px-4 py-2">
                     Apply
                   </button>
                 </Link>
