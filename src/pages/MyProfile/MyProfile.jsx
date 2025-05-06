@@ -3,13 +3,8 @@ import { Link, Navigate } from "react-router";
 import { AuthContext } from "../../Authentication/AuthContext";
 
 const MyProfile = () => {
-  const { user, logOutuser } = use(AuthContext);
-
-  const handleLogOut = () => {
-    logOutuser()
-      .then(() => {})
-      .catch((error) => console.log(error));
-  };
+  document.title = 'JobTrack || My Profile';
+  const { user } = use(AuthContext);
 
   return (
     <div className="flex justify-center my-10 px-4">
@@ -29,13 +24,6 @@ const MyProfile = () => {
         <Link to="/editProfile">
           <button className="my-4 btn btn-primary text-white">Update</button>
         </Link>
-        <div className="divider text-gray-400 font-semibold">OR</div>
-        <button
-          onClick={handleLogOut}
-          className="btn btn-error text-white mt-4"
-        >
-          Log Out
-        </button>
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import { AuthContext } from "./AuthContext";
 import {
   createUserWithEmailAndPassword,
   onAuthStateChanged,
+  sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
@@ -46,6 +47,9 @@ const AuthProvider = ({ children }) => {
       photoURL: photo,
     });
   };
+  const resetPassword = (email)=>{
+   return sendPasswordResetEmail(auth, email)
+  }
   const logOutuser = ()=>{
     return signOut(auth)
   }
@@ -69,6 +73,7 @@ const AuthProvider = ({ children }) => {
     githubSignIn,
     facebookSignIn,
     updateUserProfile,
+    resetPassword,
     logOutuser,
   };
 

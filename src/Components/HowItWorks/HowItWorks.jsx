@@ -18,7 +18,7 @@ const steps = [
     {
         icon: <FaPaperPlane className="text-white text-2xl" />,
         title: "Step 3: Apply Easily",
-        description: "Click the Apply button to submit your application directly.",
+        description: "Click the Details button then a modal open and you can easily apply for the job by clicking on Apply button",
         bg: "bg-green-600"
     },
 ];

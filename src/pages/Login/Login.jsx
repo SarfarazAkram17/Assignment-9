@@ -1,11 +1,13 @@
-import React, { use, useState } from "react";
+import React, { use, useRef, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../../Authentication/AuthContext";
 
 const Login = () => {
+  document.title = 'JobTrack || Login';
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
+  const emailRef = useRef(null);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -20,7 +22,7 @@ const Login = () => {
     signInUser(email, password)
       .then((result) => {
         navigate(location.state || "/");
-        console.log(result.user)
+        console.log(result.user);
       })
       .catch((error) => {
         setError(error.message);
@@ -30,7 +32,7 @@ const Login = () => {
     googleSignIn()
       .then((result) => {
         navigate(location.state || "/");
-        console.log(result)
+        console.log(result);
       })
       .catch((error) => console.log(error));
   };
@@ -48,6 +50,10 @@ const Login = () => {
       })
       .catch((error) => console.log(error));
   };
+  const handleForgotPassword = () => {
+    const email = emailRef.current.value;
+    navigate("/forgotPassword", { state: { email } });
+  };
   return (
     <div className="flex justify-center my-10">
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-xl">
@@ -58,6 +64,7 @@ const Login = () => {
             <input
               required
               name="email"
+              ref={emailRef}
               type="email"
               className="input mb-2"
               placeholder="Enter your email"
@@ -82,8 +89,8 @@ const Login = () => {
                 )}
               </div>
             </div>
-            <div>
-              <a className="link link-hover">Forgot password?</a>
+            <div onClick={handleForgotPassword}>
+              <a className="link link-hover font-semibold">Forgot password?</a>
             </div>
             {error && <p className="text-red-500 font-semibold">{error}</p>}
             <button className="btn btn-primary text-white mt-4">Login</button>

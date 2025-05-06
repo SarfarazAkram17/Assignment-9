@@ -3,6 +3,7 @@ import { AuthContext } from "../../Authentication/AuthContext";
 import { useNavigate } from "react-router";
 
 const EditProfile = () => {
+  document.title = 'JobTrack || Edit Profile';
   const { updateUserProfile } = use(AuthContext);
   const navigate = useNavigate();
 

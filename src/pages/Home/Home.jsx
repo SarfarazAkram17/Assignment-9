@@ -5,6 +5,7 @@ import { useLoaderData } from 'react-router';
 import Companies from '../../Components/Companies/Companies';
 
 const Home = () => {
+    document.title = 'JobTrack || Home';
     const companiesData = useLoaderData()
     return (
         <div>

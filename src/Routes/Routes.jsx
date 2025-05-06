@@ -9,6 +9,7 @@ import Blog from "../pages/Blog/Blog";
 import PrivateRoutes from "./PrivateRoutes";
 import EditProfile from "../pages/EditProfile/EditProfile";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import ForgotPassword from "../pages/ForgetPassword/ForgotPassword";
 
 export const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ export const router = createBrowserRouter([
       {
         path: "/login",
         Component: Login,
+      },
+      {
+        path: "/forgotPassword",
+        Component: ForgotPassword,
       },
       {
         path: "/register",

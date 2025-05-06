@@ -5,8 +5,12 @@ import { FaBriefcase } from "react-icons/fa";
 import { AuthContext } from "../../Authentication/AuthContext";
 
 const Navbar = () => {
-  const { user } = use(AuthContext);
-
+  const { user, logOutuser } = use(AuthContext);
+  const handleLogOut = () => {
+    logOutuser()
+      .then(() => {})
+      .catch((error) => console.log(error));
+  };
   const links = (
     <>
       <NavLink className="my-1 mx-4 text-[1.1rem]" to="/">
@@ -14,6 +18,9 @@ const Navbar = () => {
       </NavLink>
       <NavLink className="my-1 mx-4 text-[1.1rem]" to="/blog">
         Blog
+      </NavLink>
+      <NavLink className="my-1 mx-4 text-[1.1rem]" to="/myProfile">
+        Profile
       </NavLink>
     </>
   );
@@ -59,13 +66,21 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       {user ? (
-        <Link to="/myProfile" className="navbar-end">
-          <img
-            src={user.photoURL}
-            alt=""
-            className="h-12 w-12 rounded-full cursor-pointer"
-          />
-        </Link>
+        <div className="flex items-center navbar-end gap-2">
+          <Link to="/myProfile">
+            <img
+              src={user.photoURL}
+              alt=""
+              className="h-12 w-12 rounded-full cursor-pointer"
+            />
+          </Link>
+          <button
+            onClick={handleLogOut}
+            className="btn btn-error text-white"
+          >
+            Log Out
+          </button>
+        </div>
       ) : (
         <div className="navbar-end space-x-2">
           <Link to="/login">
