@@ -42,7 +42,12 @@ const Hero = () => {
       </div>
       <div className="max-w-7xl mx-auto md:hidden flex flex-col items-center gap-12">
         {/* Left - Text */}
-        <div>
+        <motion.div
+          initial={{ opacity: 0, y: -100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: false, amount: 0.3 }}
+        >
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
             Find Your <span className="text-blue-600">Dream Job</span> Today
           </h1>
@@ -54,16 +59,21 @@ const Hero = () => {
             <FaBriefcase />
             Explore Jobs
           </button>
-        </div>
+        </motion.div>
 
         {/* Right - Image */}
-        <div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: false, amount: 0.4 }}
+        >
           <img
             src="https://i.ibb.co.com/tTRnnrPk/Screenshot-2025-05-05-164433.png"
             alt="Job search illustration"
             className="w-full h-auto object-contain"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

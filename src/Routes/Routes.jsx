@@ -1,16 +1,19 @@
 import { createBrowserRouter } from "react-router";
 import RootLayout from "../layouts/RootLayout";
 import Home from "../pages/Home/Home";
-import Login from "../pages/Login/Login";
-import Register from "../pages/Register/Register";
 import CompanyDetials from "../Components/CompanyDetails/CompanyDetials";
 import MyProfile from "../pages/MyProfile/MyProfile";
 import PrivateRoutes from "./PrivateRoutes";
 import EditProfile from "../pages/EditProfile/EditProfile";
-import ErrorPage from "../pages/ErrorPage/ErrorPage";
-import ForgotPassword from "../pages/ForgetPassword/ForgotPassword";
 import Success from "../pages/Success/Success";
+import { lazy, Suspense } from "react";
 
+const Login = lazy(() => import("../pages/Login/Login"));
+const Register = lazy(() => import("../pages/Register/Register"));
+const ForgotPassword = lazy(() =>
+  import("../pages/ForgetPassword/ForgotPassword")
+);
+const ErrorPage = lazy(() => import("../pages/ErrorPage/ErrorPage"));
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -52,15 +55,45 @@ export const router = createBrowserRouter([
       },
       {
         path: "/login",
-        Component: Login,
+        element: (
+          <Suspense
+            fallback={
+              <div className="flex justify-center mt-28 mb-20">
+                <span className="loading loading-bars loading-xl"></span>
+              </div>
+            }
+          >
+            <Login></Login>
+          </Suspense>
+        ),
       },
       {
         path: "/forgotPassword",
-        Component: ForgotPassword,
+        element: (
+          <Suspense
+            fallback={
+              <div className="flex justify-center mt-28 mb-20">
+                <span className="loading loading-bars loading-xl"></span>
+              </div>
+            }
+          >
+            <ForgotPassword></ForgotPassword>
+          </Suspense>
+        ),
       },
       {
         path: "/register",
-        Component: Register,
+        element: (
+          <Suspense
+            fallback={
+              <div className="flex justify-center mt-28 mb-20">
+                <span className="loading loading-bars loading-xl"></span>
+              </div>
+            }
+          >
+            <Register></Register>
+          </Suspense>
+        ),
       },
       {
         path: "/myProfile",
@@ -82,6 +115,16 @@ export const router = createBrowserRouter([
   },
   {
     path: "*",
-    Component: ErrorPage,
+    element: (
+      <Suspense
+        fallback={
+          <div className="h-screen flex justify-center items-center">
+            <span className="loading loading-bars loading-xl"></span>
+          </div>
+        }
+      >
+        <ErrorPage></ErrorPage>
+      </Suspense>
+    ),
   },
 ]);

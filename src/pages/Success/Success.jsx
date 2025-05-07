@@ -6,13 +6,13 @@ const Success = () => {
   const reviews = useLoaderData();
 
   return (
-    <div className="bg-white min-h-screen py-10 px-4 sm:px-10 mb-8">
+    <div className="bg-white min-h-screen py-10 px-4 mb-8">
       <div className="text-center py-12 bg-gradient-to-b from-[#1a0432] to-[#340354] text-white rounded-xl mb-12">
         <h1 className="text-4xl font-bold text-purple-400 mb-6">
           Successful Job Getters
         </h1>
-        <p className="max-w-2xl mx-auto text-sm">
-          Below are the profiles of some individuals who have secured jobs or
+        <p className="max-w-xl mx-auto text-sm">
+          Below are the profiles of some individuals who have get jobs or
           internships in various places through our website.
         </p>
       </div>
@@ -28,9 +28,9 @@ const Success = () => {
                 <img
                   src={review.image}
                   alt={review.name}
-                  className="w-96 h-36 rounded-xl object-cover border"
+                  className="w-96 h-44 md:h-32 rounded-xl md:object-cover border"
                 />
-                <span className="absolute bottom-0 right-0 bg-purple-600 text-white text-xs px-2 py-0.5 rounded">
+                <span className="absolute bottom-0 right-0 bg-purple-600 text-white text-xs px-1 py-0.5 rounded">
                   {review.hiredDate}
                 </span>
               </div>
