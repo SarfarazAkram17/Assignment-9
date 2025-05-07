@@ -1,32 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
 
-const Highlights = ({ companiesData }) => {
-  const [availableJobs, setAvailableJobs] = useState(0);
-  const [totalAvailableVacancy, setTotalAvailableVacancy] = useState(0);
-
-  useEffect(() => {
-    let jobs = 0;
-    let availableVacancy = 0;
-    for (let company of companiesData) {
-      const availableJobs = company.jobs.length;
-      jobs += availableJobs;
-      company.jobs.forEach((job) => (availableVacancy += job.vacancy));
-    }
-    setAvailableJobs(jobs);
-    setTotalAvailableVacancy(availableVacancy);
-  }, [companiesData]);
-
+const Highlights = () => {
   const cards = [
     {
       img: "https://www.interreg-central.eu/wp-content/uploads/2022/11/library-website.jpg",
-      count: availableJobs,
+      count: 87,
       label: "Total Available Jobs",
     },
     {
       img: "https://i.ibb.co.com/FkxvJ69m/Screenshot-2025-05-07-181004-removebg-preview.png",
-      count: totalAvailableVacancy,
+      count: 1465,
       label: "Total Available Vacancy",
     },
     {
@@ -50,7 +35,7 @@ const Highlights = ({ companiesData }) => {
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
       >
-        JobTrack Highlights
+        <span className="text-primary">JobTrack</span> Highlights
       </motion.h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-center">
@@ -64,11 +49,7 @@ const Highlights = ({ companiesData }) => {
             transition={{ duration: 0.7, delay: index * 0.2 }}
           >
             <div className="flex justify-center mb-4">
-              <img
-                src={card.img}
-                alt=""
-                className="h-20 w-24 rounded-md"
-              />
+              <img src={card.img} alt="" className="h-20 w-24 rounded-md" />
             </div>
             <CountUp
               className="font-bold text-2xl md:text-4xl"

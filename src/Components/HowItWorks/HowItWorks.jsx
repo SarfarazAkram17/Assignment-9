@@ -34,7 +34,7 @@ const HowItWorks = () => {
                     viewport={{ once: false, amount: 0.3 }}
                     transition={{ duration: 0.7 }}
                 >
-                    How It Works
+                    <span className="text-primary">How</span> It Works
                 </motion.h2>
 
                 <div className="grid gap-10 md:grid-cols-3">

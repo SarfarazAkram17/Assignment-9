@@ -7,7 +7,7 @@ const Companies = ({ companiesData }) => {
   
   return (
     <div className="py-16 px-4">
-      <h1 className="text-3xl md:text-4xl font-bold text-center mb-16">Companies</h1>
+      <h1 className="text-3xl md:text-4xl font-bold text-center mb-16"><span className="text-primary">Comp</span>anies</h1>
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 text-center md:gap-8 items-center">
         {data.map((company) => (
           <Link key={company.id} to={`/company/${company.id}`}>

@@ -2,9 +2,9 @@ import React from "react";
 import { FaBriefcase } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-const Hero = () => {
+const Hero = ({onExploreClick}) => {
   return (
-    <section className="bg-gradient-to-b mx-auto max-w-full from-white to-blue-50 py-12 px-4 md:px-10 lg:px-24">
+    <section className="bg-gradient-to-b mx-auto max-w-full from-white to-blue-50 py-12 px-4 md:px-10 lg:px-24 rounded-lg">
       <div className="max-w-7xl mx-auto hidden lg:grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         {/* Left - Text */}
         <motion.div
@@ -20,7 +20,7 @@ const Hero = () => {
             JobTrack helps you explore job opportunities, connect with top
             companies, and land the job you deserve — fast and easily.
           </p>
-          <button className="mt-8 inline-flex items-center gap-2 btn-primary text-white font-semibold px-6 py-3 rounded-lg btn">
+          <button onClick={()=>onExploreClick()} className="mt-8 inline-flex items-center gap-2 btn-primary text-white font-semibold px-6 py-3 rounded-lg btn">
             <FaBriefcase />
             Explore Jobs
           </button>
@@ -55,7 +55,7 @@ const Hero = () => {
             JobTrack helps you explore job opportunities, connect with top
             companies, and land the job you deserve — fast and easily.
           </p>
-          <button className="mt-8 inline-flex items-center gap-2 btn-primary text-white font-semibold px-6 py-3 rounded-lg btn">
+          <button onClick={()=>onExploreClick()} className="mt-8 inline-flex items-center gap-2 btn-primary text-white font-semibold px-6 py-3 rounded-lg btn">
             <FaBriefcase />
             Explore Jobs
           </button>
