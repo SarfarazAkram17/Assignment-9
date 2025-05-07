@@ -4,9 +4,9 @@ import Home from "../pages/Home/Home";
 import CompanyDetials from "../Components/CompanyDetails/CompanyDetials";
 import MyProfile from "../pages/MyProfile/MyProfile";
 import PrivateRoutes from "./PrivateRoutes";
-import EditProfile from "../pages/EditProfile/EditProfile";
 import Success from "../pages/Success/Success";
 import { lazy, Suspense } from "react";
+import UpdateProfile from "../pages/UpdateProfile/UpdateProfile";
 
 const Login = lazy(() => import("../pages/Login/Login"));
 const Register = lazy(() => import("../pages/Register/Register"));
@@ -104,10 +104,10 @@ export const router = createBrowserRouter([
         ),
       },
       {
-        path: "/editProfile",
+        path: "/updateProfile",
         element: (
           <PrivateRoutes>
-            <EditProfile></EditProfile>
+            <UpdateProfile></UpdateProfile>
           </PrivateRoutes>
         ),
       },

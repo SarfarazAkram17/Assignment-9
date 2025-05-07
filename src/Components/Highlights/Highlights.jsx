@@ -30,9 +30,9 @@ const Highlights = () => {
     <div className="mb-20 mt-8 px-4">
       <motion.h1
         className="text-3xl md:text-4xl font-bold text-center mb-16"
-        initial={{ opacity: 0, y: -40 }}
+        initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.7 }}
       >
         <span className="text-primary">JobTrack</span> Highlights

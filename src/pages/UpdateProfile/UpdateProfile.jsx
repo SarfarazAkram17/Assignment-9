@@ -3,8 +3,8 @@ import { AuthContext } from "../../Authentication/AuthContext";
 import { useNavigate } from "react-router";
 import { toast } from "react-toastify";
 
-const EditProfile = () => {
-  document.title = 'JobTrack || Edit Profile';
+const UpdateProfile = () => {
+  document.title = 'JobTrack || Update Profile';
   const { updateUserProfile } = use(AuthContext);
   const navigate = useNavigate();
 
@@ -52,4 +52,4 @@ const EditProfile = () => {
   );
 };
 
-export default EditProfile;
+export default UpdateProfile;

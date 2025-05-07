@@ -11,8 +11,9 @@ const RootLayout = () => {
         <Navbar></Navbar>
         <Outlet></Outlet>
       </div>
-      <Footer></Footer>
-
+      <div className="xl:container mx-auto">
+        <Footer></Footer>
+      </div>
       <ToastContainer></ToastContainer>
     </div>
   );

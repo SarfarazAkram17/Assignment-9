@@ -16,7 +16,7 @@ const Hero = ({onExploreClick}) => {
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
             Find Your <span className="text-blue-600">Dream Job</span> Today
           </h1>
-          <p className="mt-6 text-base md:text-lg text-gray-600">
+          <p className="mt-6 text-base text-gray-600">
             JobTrack helps you explore job opportunities, connect with top
             companies, and land the job you deserve — fast and easily.
           </p>
@@ -51,7 +51,7 @@ const Hero = ({onExploreClick}) => {
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
             Find Your <span className="text-blue-600">Dream Job</span> Today
           </h1>
-          <p className="mt-6 text-base md:text-lg text-gray-600">
+          <p className="mt-6 text-base text-gray-600">
             JobTrack helps you explore job opportunities, connect with top
             companies, and land the job you deserve — fast and easily.
           </p>

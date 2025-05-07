@@ -7,7 +7,7 @@ const Success = () => {
 
   return (
     <div className="bg-white min-h-screen py-10 px-4 mb-8">
-      <div className="text-center py-12 bg-gradient-to-b from-[#1a0432] to-[#340354] text-white rounded-xl mb-12">
+      <div className="text-center py-12 px-2 bg-gradient-to-b from-[#1a0432] to-[#340354] text-white rounded-xl mb-12">
         <h1 className="text-4xl font-bold text-purple-400 mb-6">
           Successful Job Getters
         </h1>
@@ -28,7 +28,7 @@ const Success = () => {
                 <img
                   src={review.image}
                   alt={review.name}
-                  className="w-96 h-44 md:h-32 rounded-xl md:object-cover border"
+                  className="w-full md:min-w-32 h-44 md:h-32 rounded-xl md:object-cover border"
                 />
                 <span className="absolute bottom-0 right-0 bg-purple-600 text-white text-xs px-1 py-0.5 rounded">
                   {review.hiredDate}

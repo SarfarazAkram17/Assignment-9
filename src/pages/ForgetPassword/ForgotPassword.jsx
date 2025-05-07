@@ -4,9 +4,9 @@ import { AuthContext } from "../../Authentication/AuthContext";
 import { toast } from "react-toastify";
 
 const ForgotPassword = () => {
-    document.title = 'JobTrack || Forget Password';
+  document.title = "JobTrack || Forget Password";
   const location = useLocation();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const { resetPassword } = use(AuthContext);
 
   const handleForgotPassword = (e) => {
@@ -18,15 +18,15 @@ const ForgotPassword = () => {
     }
     resetPassword(email)
       .then(() => {
-        alert("password reset email sent");
+        alert("Password reset email sent");
         window.open("https://mail.google.com", "_blank");
-        navigate(-1)
+        navigate(-1);
       })
       .catch((error) => toast.error(error.message));
   };
 
   return (
-    <div className="flex justify-center my-10">
+    <div className="flex justify-center my-10 px-4">
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-xl">
         <div className="card-body">
           <h1 className="text-2xl font-bold mb-4">Reset Password</h1>

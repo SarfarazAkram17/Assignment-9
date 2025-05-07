@@ -14,7 +14,7 @@ const ErrorPage = () => {
           />
         </div>
 
-        <h1 className="text-red-500 font-semibold text-2xl">Page Not Found</h1>
+        <h1 className="text-red-500 font-bold text-3xl md:text-4xl">404 Page Not Found</h1>
         <Link to="/">
           <button className="btn btn-primary mt-4">Back To Home</button>
         </Link>

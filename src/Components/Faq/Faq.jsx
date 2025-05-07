@@ -2,7 +2,7 @@ import React from "react";
 
 const Faq = () => {
   return (
-    <div className="my-20">
+    <div className="my-20 px-2">
       <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
         <span className="text-primary">Frequently</span> Asked Questions
       </h2>
@@ -43,7 +43,8 @@ const Faq = () => {
         </div>
         <div className="collapse-content text-sm">
           Go to your Profile page by clicking profile or your avatar on the
-          navbar. Then click Update to update your name, photo URL details.
+          navbar. Then click Update to fill your name, photo URL details. Then
+          click Update Information button
         </div>
       </div>
       <div className="collapse collapse-arrow bg-base-100 border border-base-300">

@@ -4,7 +4,7 @@
 
 ## 🌐 Live URL
 
-[🔗 Visit JobTrack](https://sarfaraz-akram-assignment-9.netlify.app/)
+[🔗 Visit JobTrack](https://assignment-9-sarfaraz-akram.netlify.app)
 
 ## 🎯 Purpose
 
