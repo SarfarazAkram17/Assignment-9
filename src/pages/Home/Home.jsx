@@ -3,6 +3,7 @@ import Hero from '../../Components/Hero/Hero';
 import HowItWorks from '../../Components/HowItWorks/HowItWorks';
 import { useLoaderData } from 'react-router';
 import Companies from '../../Components/Companies/Companies';
+import Highlights from '../../Components/Highlights/Highlights';
 
 const Home = () => {
     document.title = 'JobTrack || Home';
@@ -12,6 +13,7 @@ const Home = () => {
             <Hero></Hero>
             <HowItWorks></HowItWorks>
             <Companies companiesData={companiesData}></Companies>
+            <Highlights companiesData={companiesData}></Highlights>
         </div>
     );
 };
