@@ -35,5 +35,6 @@ The purpose of JobTrack is to provide users with a user-friendly interface to br
 - **firebase** – v11.6.1 – For authentication and data storage (if used)
 
 # 🛠️ Getting Started 
-git clone https://github.com/SarfarazAkram17/JobTrack.git
+
+git clone https://github.com/SarfarazAkram17/JobTrack.git <br />
 cd JobTrack
