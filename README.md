@@ -20,16 +20,16 @@ The purpose of JobTrack is to provide users with a user-friendly interface to br
 
 ## 🚀 Tech Stack
 
-- **React** - v-19.0.0
-- **React Router** – For routing between pages like `/my-profile` and `update-profile` - v-7.5.3
-- **Tailwind CSS** – For fast, modern, and responsive UI styling
-- **React Icons** – For consistent iconography across the app
+- **React** – v19.0.0
+- **React Router** – v7.5.3
+- **Tailwind CSS** – v4.1.5
+- **React Icons** – v5.5.0
 
 ## 📦 NPM Packages Used
 
-- **daisyUI** – For make website responsive easily
-- **React Icons** – For consistent iconography across the app - v-5.5.0
-- **Motion** – For add animation in Hero and How It Works sections
-- **React Toastify** – For show success, warning and error message using toast - v-11.0.5
-- **React CountUp** – For CountUp easily - v-6.5.3
-- **framer-motion** – For CountUp easily - v-12.9.4
+- **daisyUI** – v5.0.35 – For making the website responsive easily
+- **React Icons** – v5.5.0 – For consistent iconography across the app
+- **Framer Motion** – v12.9.4 – For adding animation in Hero and How It Works sections
+- **React Toastify** – v11.0.5 – For showing success, warning, and error messages using toast
+- **React CountUp** – v6.5.3 – For number animation/count up effect
+- **firebase** – v11.6.1 – For authentication and data storage (if used)
